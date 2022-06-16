@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: darkslategrey;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  /* display: flex; */
+  height: 100vh;
+}
+
+header {
+  text-align: right;
+  padding-top: 30px;
+  padding-right: 100px;
+}
+
+a {
+  color: hsl(27, 81%, 48%);
+  font-size: 130%;
+  padding: 30px;
+}
+
+a:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "a a a b"
+    "c c d d"
+    "c c e e";
+
+  gap: 15px;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.box1,
+.box2,
+.box3 {
+  padding: 5em;
+  padding-top: 10em;
+  border-radius: 1px;
+}
+
+.box4 {
+  padding: 1em;
+  padding-top: 12589 * -em;
+}
+
+.box5 {
+  padding: 2em;
+  padding-top: 2em;
+}
+
+.box1 {
+  background-color: rgb(255, 30, 0);
+  grid-area: a;
+}
+
+.box2 {
+  background-color: orange;
+  grid-area: b;
+}
+
+.box3 {
+  background-color: rgb(13, 151, 13);
+  grid-area: c;
+}
+
+.box4 {
+  background-color: rgb(48, 144, 182);
+  grid-area: d;
+}
+
+.box5 {
+  background-color: rgb(48, 144, 182);
+  grid-area: e;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    width: 100%;
+  }
+}
