@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+main {
+  /* width: 1440px; */
+  /* width: 375px; */
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 100vh;
+  align-items: center;
+}
+
+img {
+  padding-bottom: 30px;
+}
+
+.sedan,
+.suv,
+.luxury {
+  padding: 30px;
+  text-align: left;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+h2 {
+  /* font-family: "Lexend Deca", sans-serif; */
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 200%;
+  padding-bottom: 30px;
+}
+
+p {
+  font-weight: 400;
+
+  padding-bottom: 50px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.8;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.button1:hover {
+  border: 3px solid hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+button.button2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.button2:hover {
+  border: 3px solid hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+button.button3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.button3:hover {
+  border: 3px solid hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+header {
+  text-align: right;
+  padding-top: 30px;
+  padding-right: 100px;
+}
+
+a {
+  color: hsl(179, 100%, 13%);
+  font-size: 130%;
+  padding: 30px;
+}
+
+a:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+a:active {
+  background-color: hsl(179, 100%, 13%);
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    width: 100%;
+    flex-direction: column;
+  }
+}
